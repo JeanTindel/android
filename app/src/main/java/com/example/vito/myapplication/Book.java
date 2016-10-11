@@ -53,6 +53,6 @@ public class Book {
 
     public String ToString()
     {
-        return "Le livre " + this.id + "a le titre " + this.title + " il a été ecris par "+this.author+" le resumé est : "+this.Resume;
+        return "Le livre " + this.id + "a le titre " + this.title + " il a été écrit par "+this.author+" le résumé est : "+this.Resume;
     }
 }
