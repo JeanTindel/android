@@ -29,7 +29,7 @@ public class Books {
 
     }
 
-    public List<Book> getBook(){
+    public List<Book> getBooks(){
         return new ArrayList(LstBook.values());
     }
 

@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class BookActivity extends AppCompatActivity implements View.OnClickListener{
+public class BookActivity extends AppCompatActivity implements View.OnClickListener, BookList.OnFragmentInteractionListener{
 
     ArrayList<String>datas = new ArrayList<String>();
     ListView listView;
@@ -43,6 +43,11 @@ public class BookActivity extends AppCompatActivity implements View.OnClickListe
         datas.add(objet.getText().toString());
 
         objet.setText("");
+
+    }
+
+    @Override
+    public void onBookSelected(String Id) {
 
     }
 }

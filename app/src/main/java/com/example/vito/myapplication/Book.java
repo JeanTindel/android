@@ -7,31 +7,31 @@ public class Book {
     String id;
     String title;
     String author;
-    String CoverUrl;
-    String Resume;
+    String coverUrl;
+    String resume;
 
-    public String GetId()
+    public String getId()
     {
         return this.id;
     }
 
-    public String GetTitle(){
+    public String getTitle(){
         return this.title;
     }
 
-    public String GetAuthor(){
+    public String getAuthor(){
         return this.author;
     }
 
-    public String GetCoverUrl(){
-        return this.CoverUrl;
+    public String getCoverUrl(){
+        return this.coverUrl;
     }
 
-    public String GetResume(){
-        return this.Resume;
+    public String getResume(){
+        return this.resume;
     }
 
-    public void SetId(String id){
+    public void setId(String id){
         this.id = id;
     }
 
@@ -39,20 +39,30 @@ public class Book {
         this.title = title;
     }
 
-    public void SetAuthor(String Author){
+    public void setAuthor(String Author){
         this.author = Author;
     }
 
-    public void SetCoverUrl(String CoverUrl){
-        this.CoverUrl = CoverUrl;
+    public void setCoverUrl(String CoverUrl){
+        this.coverUrl = CoverUrl;
     }
 
-    public void SetResume(String Resume){
-        this.Resume = Resume;
+    public void setResume(String Resume){
+        this.resume = Resume;
     }
 
-    public String ToString()
+    public String toString()
     {
-        return "Le livre " + this.id + "a le titre " + this.title + " il a été écrit par "+this.author+" le résumé est : "+this.Resume;
+        return "Le livre " + this.id + "a le titre " + this.title + " il a été écrit par "+this.author+" le résumé est : "+this.resume;
+    }
+
+    //constructeur Book
+    public Book(String Id,String Title,String Author,String CoverUrl,String Resume)
+    {
+        this.id=Id;
+        this.title=Title;
+        this.author=Author;
+        this.coverUrl=CoverUrl;
+        this.resume=Resume;
     }
 }
