@@ -27,8 +27,7 @@ import android.widget.ListView;
 public class BookList extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    private static final String ARG_LOGIN = "login";
 
 
 
@@ -59,8 +58,7 @@ public class BookList extends Fragment {
     public static BookList newInstance(String param1, String param2) {
         BookList fragment = new BookList();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+        args.putString(ARG_LOGIN, param1);
         fragment.setArguments(args);
         return fragment;
     }
@@ -69,7 +67,7 @@ public class BookList extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            login = getArguments().getString(ARG_PARAM1);
+            login = getArguments().getString(ARG_LOGIN);
 
         }
     }
