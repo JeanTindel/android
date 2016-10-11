@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class DetailActivity extends AppCompatActivity implements View.OnClickListener{
+public class BookActivity extends AppCompatActivity implements View.OnClickListener{
 
     ArrayList<String>datas = new ArrayList<String>();
     ListView listView;

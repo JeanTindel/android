@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 
 
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             Log.i("Bouton","Clic Clic!");
 
-            Intent nextActivity = new Intent(this,DetailActivity.class);
+            Intent nextActivity = new Intent(this,BookActivity.class);
             //on passe l'intention au système
             startActivity(nextActivity);
         }
