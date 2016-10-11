@@ -36,4 +36,13 @@ public class Books {
     public Book getBookById(String id){
         return LstBook.get(id);
     }
+
+    private void init()
+    {
+        addBook(new Book("1","livre 1","LSI","http://google.com","4eme de couverture ici"));
+        addBook(new Book("2","livre 2","HCE","http://bing.com","4eme de couverture ici"));
+        addBook(new Book("3","livre 3","LTO","http://www.apple.com","4eme de couverture ici"));
+        addBook(new Book("4","livre 4","VLE","http://google.com","4eme de couverture ici"));
+        addBook(new Book("5","livre 5","LSI","http://google.com","4eme de couverture ici"));
+    }
 }
